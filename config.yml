@@ -1,17 +1,18 @@
 language: ar
 
 pipeline:
-  - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
-  - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
-  - name: DIETClassifier
-    epochs: 50
-  - name: EntitySynonymMapper
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+  epochs: 50
+- name: EntitySynonymMapper
 
 policies:
-  - name: MemoizationPolicy
-  - name: RulePolicy
-  - name: TEDPolicy
-    max_history: 5
-    epochs: 50
+- name: MemoizationPolicy
+- name: RulePolicy
+- name: TEDPolicy
+  max_history: 5
+  epochs: 50
+assistant_id: 20250706-204804-citron-buy-in

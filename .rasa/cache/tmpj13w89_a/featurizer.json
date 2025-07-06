@@ -1,0 +1,71 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "ask_alternative_color": 1,
+        "ask_alternative_product": 2,
+        "ask_alternative_size": 3,
+        "ask_for_help": 4,
+        "ask_for_product_image": 5,
+        "ask_for_store_location": 6,
+        "ask_product_price": 7,
+        "back": 8,
+        "check_product_availability": 9,
+        "check_shipping_price": 10,
+        "confirm_order": 11,
+        "deny": 12,
+        "goodbye": 13,
+        "greet": 14,
+        "nlu_fallback": 15,
+        "out_of_scope": 16,
+        "provide_city": 17,
+        "provide_size": 18,
+        "request_booking": 19,
+        "request_return": 20,
+        "request_size_exchange": 21,
+        "restart": 22,
+        "send_product_image": 23,
+        "session_start": 24,
+        "thank": 25
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_greet": 13,
+        "action_analyze_image": 14,
+        "action_collect_booking": 15,
+        "utter_ask_city": 16,
+        "utter_ask_phone_number": 17,
+        "utter_ask_product_image": 18,
+        "utter_goodbye": 19,
+        "utter_greet": 20
+      },
+      "entities": {
+        "area": 0,
+        "city": 1,
+        "phone_number": 2,
+        "product_code": 3,
+        "size": 4
+      },
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

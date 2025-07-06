@@ -31,23 +31,32 @@ entities:
   - city
   - area
   - phone_number
-
 slots:
   product_code:
     type: text
     influence_conversation: false
+    mappings:
+      - type: from_text
   size:
     type: text
     influence_conversation: false
+    mappings:
+      - type: from_text
   city:
     type: text
     influence_conversation: false
+    mappings:
+      - type: from_text
   area:
     type: text
     influence_conversation: false
+    mappings:
+      - type: from_text
   phone_number:
     type: text
     influence_conversation: false
+    mappings:
+      - type: from_text
 
 actions:
   - action_greet
