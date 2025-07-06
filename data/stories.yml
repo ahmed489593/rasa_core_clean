@@ -1,0 +1,30 @@
+version: "3.1"
+
+stories:
+
+- story: سيناريو الترحيب
+  steps:
+    - intent: greet
+    - action: action_greet
+
+- story: تحليل صورة المنتج
+  steps:
+    - intent: send_product_image
+    - action: action_analyze_image
+
+- story: حجز منتج
+  steps:
+    - intent: request_booking
+    - action: action_collect_booking
+
+- story: تأكيد الطلب بعد الصورة
+  steps:
+    - intent: send_product_image
+    - action: action_analyze_image
+    - intent: request_booking
+    - action: action_collect_booking
+
+- story: توديع
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye

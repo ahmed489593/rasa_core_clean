@@ -1,0 +1,128 @@
+version: "3.1"
+language: "ar"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - مرحبتين
+    - السلام عليكم
+    - هلا
+    - صباح الخير
+    - مساء الخير
+
+- intent: goodbye
+  examples: |
+    - مع السلامة
+    - نشوفك على خير
+    - في امان الله
+
+- intent: confirm_order
+  examples: |
+    - نبي نأكد طلبيتي
+    - نثبت الطلب
+
+- intent: check_shipping_price
+  examples: |
+    - بقداش التوصيل لطرابلس؟
+    - كم التوصيل لبنغازي؟
+
+- intent: check_product_availability
+  examples: |
+    - في مقاس 42 من هالمنتج؟
+    - متوفر [j](product_code)؟
+
+- intent: ask_product_price
+  examples: |
+    - بكم هالمنتج؟
+    - شن سعره؟
+
+- intent: ask_for_help
+  examples: |
+    - بالله تعاونني
+    - محتاج استفسار
+
+- intent: ask_for_product_image
+  examples: |
+    - وريني صورة المنتج
+    - ممكن نشوف صورة الحذاء؟
+
+- intent: ask_for_store_location
+  examples: |
+    - وين محلكم؟
+    - كيف نوصل ليكم؟
+
+- intent: request_size_exchange
+  examples: |
+    - نبدل مقاس
+    - جاني غلط نبي نبدله
+
+- intent: request_return
+  examples: |
+    - نبي نرجع المنتج
+    - ما عجبنيش ونبي نرده
+
+- intent: ask_alternative_product
+  examples: |
+    - عندكم موديل ثاني؟
+    - شن البديل لهدا؟
+
+- intent: ask_alternative_size
+  examples: |
+    - مافيش 42 شنو البديل؟
+    - مقاسات ثانية متوفرة؟
+
+- intent: ask_alternative_color
+  examples: |
+    - ألوان ثانية متوفرة؟
+    - شن الألوان اللي عندكم؟
+
+- intent: out_of_scope
+  examples: |
+    - نبي نطلب بيتزا
+    - شنو حالة الطقس؟
+
+- intent: provide_city
+  examples: |
+    - طرابلس
+    - بنغازي
+    - مصراتة
+    - سبها
+
+- intent: provide_size
+  examples: |
+    - 40
+    - 41
+    - 42
+    - 43
+
+- intent: send_product_image
+  examples: |
+    - [صورة]
+    - هادي هي
+    - تفضل الصورة
+
+- intent: affirm
+  examples: |
+    - ايوه
+    - تمام
+    - صحيح
+
+- intent: deny
+  examples: |
+    - لا
+    - مش هكي
+    - غلط
+
+- intent: thank
+  examples: |
+    - مشكور
+    - بارك الله فيك
+    - يعطيك الصحة
+
+- intent: request_booking
+  examples: |
+    - نبي نحجز
+    - نبي نطلب
+    - نبي نشري
+    - احجزلي هدا

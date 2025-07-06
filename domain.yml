@@ -1,0 +1,67 @@
+version: "3.1"
+language: "ar"
+
+intents:
+  - greet
+  - goodbye
+  - confirm_order
+  - check_shipping_price
+  - check_product_availability
+  - ask_product_price
+  - ask_for_help
+  - ask_for_product_image
+  - ask_for_store_location
+  - request_size_exchange
+  - request_return
+  - ask_alternative_product
+  - ask_alternative_size
+  - ask_alternative_color
+  - out_of_scope
+  - provide_city
+  - provide_size
+  - send_product_image
+  - affirm
+  - deny
+  - thank
+  - request_booking
+
+entities:
+  - product_code
+  - size
+  - city
+  - area
+  - phone_number
+
+slots:
+  product_code:
+    type: text
+    influence_conversation: false
+  size:
+    type: text
+    influence_conversation: false
+  city:
+    type: text
+    influence_conversation: false
+  area:
+    type: text
+    influence_conversation: false
+  phone_number:
+    type: text
+    influence_conversation: false
+
+actions:
+  - action_greet
+  - action_analyze_image
+  - action_collect_booking
+
+responses:
+  utter_greet:
+    - text: "مرحبتين بيك 👋 كيف نقدر نساعدك اليوم؟"
+  utter_goodbye:
+    - text: "في أمان الله 🌟"
+  utter_ask_product_image:
+    - text: "ابعثلي صورة المنتج لو سمحت باش نقدر نساعدك أفضل."
+  utter_ask_phone_number:
+    - text: "عطيني رقم تليفونك باش نكملوا الحجز"
+  utter_ask_city:
+    - text: "وين تحب نوصلك؟ أي مدينة؟"

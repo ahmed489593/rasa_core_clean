@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+
+- rule: رد على التحية
+  steps:
+    - intent: greet
+    - action: action_greet
+
+- rule: توديع
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: استجابة للصورة
+  steps:
+    - intent: send_product_image
+    - action: action_analyze_image
+
+- rule: استجابة للحجز
+  steps:
+    - intent: request_booking
+    - action: action_collect_booking
